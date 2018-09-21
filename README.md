@@ -11,7 +11,7 @@ Since mongoose can't store some keywords, sucha as `$`, `.` and so on, so mongo-
 
 ## Usage
 
-`npm i mongo-parser`
+`npm i mongo-parser --save`
 
 ## API
 
