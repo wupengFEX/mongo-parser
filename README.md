@@ -15,7 +15,7 @@ Since mongoose can't store some keywords, sucha as `$`, `.` and so on, so mongo-
 
 ## API
 
-### `escape`
+### `escape(object)`
 
 escape for object or string, for example
 
@@ -24,7 +24,7 @@ const msp = require('mongo-parser');
 msp.escape(obj);
 ```
 
-### `unescape`
+### `unescape(object)`
 
 escape for object or string, for example
 

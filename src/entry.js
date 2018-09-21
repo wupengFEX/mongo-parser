@@ -5,6 +5,13 @@
 const deepClone = require('deep-clone');
 
 class MSP {
+	/**
+	 * Travis object and replce mongo characters
+	 *
+	 * @param {Object} obj Object to be escaped
+	 * @param {Function} cb callback for replace mongo characters
+	 * @return {Object} escaped object
+	 */
 	static crawl (obj, cb) {
 		if (obj && typeof obj === 'object') {
 			if (Array.isArray(obj)) {
@@ -27,9 +34,10 @@ class MSP {
 
 
 	/**
+	 * Escape mongo characters from object
 	 *
-	 * @param {String} obj
-	 * @return {String}
+	 * @param {Object} obj Object to be escaped
+	 * @return {Object} escaped object
 	 */
 	static escape(obj) {
 		return this.crawl(obj, (item) => {
@@ -38,10 +46,10 @@ class MSP {
 	}
 
 	/**
-	 * Unescapes mongo characters from object.
+	 * Unescapes mongo characters from object
 	 *
-	 * @param {String} obj
-	 * @return {String}
+	 * @param {Object} obj
+	 * @return {Object} unescaped object
 	 */
 	static unescape(obj) {
 		return JSON.parse(JSON.stringify(obj).replace(/\uFF04/g, '$').replace(/\uFF0E/g, '.'));
