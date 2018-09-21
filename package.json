@@ -1,0 +1,33 @@
+{
+  "name": "mongo-parser",
+  "version": "1.0.0",
+  "description": "parse mongoose schema to valide store",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --timeout 5000 --recursive test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wupengFEX/mongo-parser.git"
+  },
+  "keywords": [
+    "mongoose",
+    "json",
+    "schema",
+    "parser"
+  ],
+  "author": "Jackson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wupengFEX/mongo-parser/issues"
+  },
+  "homepage": "https://github.com/wupengFEX/mongo-parser#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "deep-clone": "^3.0.3",
+    "mocha": "^5.2.0"
+  }
+}
