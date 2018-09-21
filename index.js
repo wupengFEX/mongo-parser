@@ -1,3 +1,3 @@
-import msp './src'
+const msp = require('./src/entry');
 
-export msp;
+module.exports = msp;

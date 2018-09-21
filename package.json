@@ -1,6 +1,6 @@
 {
   "name": "mongo-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "parse mongoose schema to valide store",
   "main": "index.js",
   "directories": {
