@@ -3,7 +3,7 @@
 ![NPM Version](https://img.shields.io/npm/v/mongo-parser.svg?style=flat)
 ![Build Status](https://travis-ci.org/wupengFEX/mongo-parser.svg?branch=master)
 
-Since mongoose can't store some keywords, sucha as `$`, `.` and so on, so mongo-parser's is aim at code conversion
+Since mongoose can't store some keywords, sucha as `$`, `.` and so on, so mongo-parser is aim at code conversion.
 
 ## Basic
 
